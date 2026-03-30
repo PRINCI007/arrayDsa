@@ -1,1 +1,23 @@
+class Main {
+    public static void main(String[] args) {
+        int arr[]={5,7,3,8,410,18,1};
+        int max=arr[0];
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]>max){
+                max=arr[i];
+            }
+        }
+        System.out.println( "first max: "+ max);
+        int max2=arr[0];
+        for(int j=1;j<arr.length;j++){
+            if(arr[j]>max2 && arr[j]<max){
+                max2=arr[j];
+            }
+        }
+        System.out.println("second max: "+ max2);
+        
+    }
+}
 
+output: first max: 410
+        second max: 18
